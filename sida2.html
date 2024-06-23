@@ -120,114 +120,56 @@
     <!--Main layout-->
     <main>
       <div class="container">
-        <!-- Section: Details -->
-        <section class="mb-10 mb-lg-10">
-          <div class="row gx-xl-5">
-            <div class="col-lg-7 mb-5 mb-lg-0">
-              <!-- Carousel wrapper -->
-              <div
-                id="carouselBasicExample"
-                class="carousel slide carousel-fade mb-4"
-                data-mdb-ride="carousel"
-                data-mdb-carousel-init>
-                <!-- Indicators -->
-                <div class="carousel-indicators">
-                  <button
-                    type="button"
-                    data-mdb-target="#carouselBasicExample"
-                    data-mdb-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="Slide 1"></button>
-                  <button
-                    type="button"
-                    data-mdb-target="#carouselBasicExample"
-                    data-mdb-slide-to="1"
-                    aria-label="Slide 2"></button>
-                  <button
-                    type="button"
-                    data-mdb-target="#carouselBasicExample"
-                    data-mdb-slide-to="2"
-                    aria-label="Slide 3"></button>
-                </div>
-
-                <!-- Inner -->
-                <div class="carousel-inner rounded-9 shadow-4-strong">
-                  <!-- Single item -->
-                  <div class="carousel-item active">
-                    <img
-                      src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(15).webp"
-                      class="d-block w-100"
-                      alt="Sunset Over the City" />
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>First slide label</h5>
-                      <p>
-                        Nulla vitae elit libero, a pharetra augue mollis
-                        interdum.
-                      </p>
-                    </div>
-                  </div>
-
-                  <!-- Single item -->
-                  <div class="carousel-item">
-                    <img
-                      src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(22).webp"
-                      class="d-block w-100"
-                      alt="Canyon at Nigh" />
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Second slide label</h5>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      </p>
-                    </div>
-                  </div>
-
-                  <!-- Single item -->
-                  <div class="carousel-item">
-                    <img
-                      src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(23).webp"
-                      class="d-block w-100"
-                      alt="Cliff Above a Stormy Sea" />
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Third slide label</h5>
-                      <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl
-                        consectetur.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Inner -->
-
-                <!-- Controls -->
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-mdb-target="#carouselBasicExample"
-                  data-mdb-slide="prev">
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-mdb-target="#carouselBasicExample"
-                  data-mdb-slide="next">
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-              <!-- Carousel wrapper -->
-            </div>
-
+        <ul class="nav nav-tabs mb-3 bg-info" id="myTab0" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              data-mdb-tab-init
+              class="nav-link active"
+              id="home-tab0"
+              data-mdb-target="#home0"
+              type="button"
+              role="tab"
+              aria-controls="home"
+              aria-selected="true">
+              Home
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              data-mdb-tab-init
+              class="nav-link"
+              id="profile-tab0"
+              data-mdb-target="#profile0"
+              type="button"
+              role="tab"
+              aria-controls="profile"
+              aria-selected="false">
+              Profile
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              data-mdb-tab-init
+              class="nav-link"
+              id="contact-tab0"
+              data-mdb-target="#contact0"
+              type="button"
+              role="tab"
+              aria-controls="contact"
+              aria-selected="false">
+              Contact
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent0">
+          <div
+            class="tab-pane fade show active"
+            id="home0"
+            role="tabpanel"
+            aria-labelledby="home-tab0">
             <div class="col-lg-5 mb-5 mb-lg-0">
               <div class="col-lg-5">
-                <h3 class="fw-bold mb-4">Details</h3>
+                <h3 class="fw-bold mb-3">Details</h3>
 
                 <p>
                   This beginner-friendly, example-based course will guide you
@@ -265,268 +207,282 @@
               </div>
             </div>
           </div>
-        </section>
-        <!-- Section: Details -->
+          <div
+            class="tab-pane fade"
+            id="profile0"
+            role="tabpanel"
+            aria-labelledby="profile-tab0">
+            <section class="mb-5 mb-lg-10">
+              <h3 class="fw-bold text-center mb-5">Pricing</h3>
 
-        <!-- Section: Pricing -->
-        <section class="mb-5 mb-lg-10">
-          <h3 class="fw-bold text-center mb-5">Pricing</h3>
+              <div class="row gx-xl-5">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 order-2 order-lg-1">
+                  <div class="card h-100">
+                    <div class="card-header text-center pt-4">
+                      <p class="text-uppercase">
+                        <strong>Basic</strong>
+                      </p>
 
-          <div class="row gx-xl-5">
-            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 order-2 order-lg-1">
-              <div class="card h-100">
-                <div class="card-header text-center pt-4">
-                  <p class="text-uppercase">
-                    <strong>Basic</strong>
-                  </p>
+                      <h3 class="mb-4">
+                        <strong>$ 129</strong>
+                        <small class="text-muted" style="font-size: 16px"
+                          >/year</small
+                        >
+                      </h3>
 
-                  <h3 class="mb-4">
-                    <strong>$ 129</strong>
-                    <small class="text-muted" style="font-size: 16px"
-                      >/year</small
-                    >
-                  </h3>
-
-                  <button
-                    type="button"
-                    class="btn btn-secondary btn-rounded w-100 mb-3">
-                    Buy
-                  </button>
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-rounded w-100 mb-3"
+                        data-mdb-ripple-init>
+                        Buy
+                      </button>
+                    </div>
+                    <div class="card-body">
+                      <ol class="list-unstyled mb-0">
+                        <li class="mb-3">
+                          <i class="fas fa-check text-success me-3"></i
+                          >Unlimited updates
+                        </li>
+                        <li class="mb-3">
+                          <i class="fas fa-check text-success me-3"></i>Git
+                          repository
+                        </li>
+                        <li class="mb-3">
+                          <i class="fas fa-check text-success me-3"></i>npm
+                          installation
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
                 </div>
-                <div class="card-body">
-                  <ol class="list-unstyled mb-0">
-                    <li class="mb-3">
-                      <i class="fas fa-check text-success me-3"></i>Unlimited
-                      updates
-                    </li>
-                    <li class="mb-3">
-                      <i class="fas fa-check text-success me-3"></i>Git
-                      repository
-                    </li>
-                    <li class="mb-3">
-                      <i class="fas fa-check text-success me-3"></i>npm
-                      installation
-                    </li>
-                  </ol>
+
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 order-1 order-lg-2">
+                  <div class="card h-100">
+                    <div class="card-header text-center pt-4">
+                      <p class="text-uppercase">
+                        <strong>Advanced</strong>
+                      </p>
+
+                      <h3 class="mb-4">
+                        <strong>$ 299</strong>
+                        <small class="text-muted" style="font-size: 16px"
+                          >/year</small
+                        >
+                      </h3>
+
+                      <button
+                        type="button"
+                        class="btn btn-primary btn-rounded w-100 mb-3">
+                        Buy
+                      </button>
+                    </div>
+                    <div class="card-body">
+                      <ol class="list-unstyled mb-0">
+                        <li class="mb-3">
+                          <i class="fas fa-check text-success me-3"></i
+                          >Unlimited updates
+                        </li>
+                        <li class="mb-3">
+                          <i class="fas fa-check text-success me-3"></i>Git
+                          repository
+                        </li>
+                        <li class="mb-3">
+                          <i class="fas fa-check text-success me-3"></i>npm
+                          installation
+                        </li>
+                        <li class="mb-3">
+                          <i class="fas fa-check text-success me-3"></i>Code
+                          examples
+                        </li>
+                        <li class="mb-3">
+                          <i class="fas fa-check text-success me-3"></i>Premium
+                          snippets
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 order-3 order-lg-3">
+                  <div class="card h-100">
+                    <div class="card-header text-center pt-4">
+                      <p class="text-uppercase">
+                        <strong>Enterprise</strong>
+                      </p>
+                      <h3 class="mb-4">
+                        <strong>$ 499</strong>
+                        <small class="text-muted" style="font-size: 16px"
+                          >/year</small
+                        >
+                      </h3>
+
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-rounded w-100 mb-3">
+                        Buy
+                      </button>
+                    </div>
+                    <div class="card-body">
+                      <ol class="list-unstyled mb-0">
+                        <li class="mb-3">
+                          <i class="fas fa-check text-success me-3"></i
+                          >Unlimited updates
+                        </li>
+                        <li class="mb-3">
+                          <i class="fas fa-check text-success me-3"></i>Git
+                          repository
+                        </li>
+                        <li class="mb-3">
+                          <i class="fas fa-check text-success me-3"></i>npm
+                          installation
+                        </li>
+                        <li class="mb-3">
+                          <i class="fas fa-check text-success me-3"></i>Code
+                          examples
+                        </li>
+                        <li class="mb-3">
+                          <i class="fas fa-check text-success me-3"></i>Premium
+                          snippets
+                        </li>
+                        <li class="mb-3">
+                          <i class="fas fa-check text-success me-3"></i>Premium
+                          support
+                        </li>
+                        <li class="mb-3">
+                          <i class="fas fa-check text-success me-3"></i
+                          >Drag&amp;Drop builder
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 order-1 order-lg-2">
-              <div class="card h-100">
-                <div class="card-header text-center pt-4">
-                  <p class="text-uppercase">
-                    <strong>Advanced</strong>
-                  </p>
-
-                  <h3 class="mb-4">
-                    <strong>$ 299</strong>
-                    <small class="text-muted" style="font-size: 16px"
-                      >/year</small
-                    >
-                  </h3>
-
-                  <button
-                    type="button"
-                    class="btn btn-primary btn-rounded w-100 mb-3">
-                    Buy
-                  </button>
-                </div>
-                <div class="card-body">
-                  <ol class="list-unstyled mb-0">
-                    <li class="mb-3">
-                      <i class="fas fa-check text-success me-3"></i>Unlimited
-                      updates
-                    </li>
-                    <li class="mb-3">
-                      <i class="fas fa-check text-success me-3"></i>Git
-                      repository
-                    </li>
-                    <li class="mb-3">
-                      <i class="fas fa-check text-success me-3"></i>npm
-                      installation
-                    </li>
-                    <li class="mb-3">
-                      <i class="fas fa-check text-success me-3"></i>Code
-                      examples
-                    </li>
-                    <li class="mb-3">
-                      <i class="fas fa-check text-success me-3"></i>Premium
-                      snippets
-                    </li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 order-3 order-lg-3">
-              <div class="card h-100">
-                <div class="card-header text-center pt-4">
-                  <p class="text-uppercase">
-                    <strong>Enterprise</strong>
-                  </p>
-                  <h3 class="mb-4">
-                    <strong>$ 499</strong>
-                    <small class="text-muted" style="font-size: 16px"
-                      >/year</small
-                    >
-                  </h3>
-
-                  <button
-                    type="button"
-                    class="btn btn-secondary btn-rounded w-100 mb-3">
-                    Buy
-                  </button>
-                </div>
-                <div class="card-body">
-                  <ol class="list-unstyled mb-0">
-                    <li class="mb-3">
-                      <i class="fas fa-check text-success me-3"></i>Unlimited
-                      updates
-                    </li>
-                    <li class="mb-3">
-                      <i class="fas fa-check text-success me-3"></i>Git
-                      repository
-                    </li>
-                    <li class="mb-3">
-                      <i class="fas fa-check text-success me-3"></i>npm
-                      installation
-                    </li>
-                    <li class="mb-3">
-                      <i class="fas fa-check text-success me-3"></i>Code
-                      examples
-                    </li>
-                    <li class="mb-3">
-                      <i class="fas fa-check text-success me-3"></i>Premium
-                      snippets
-                    </li>
-                    <li class="mb-3">
-                      <i class="fas fa-check text-success me-3"></i>Premium
-                      support
-                    </li>
-                    <li class="mb-3">
-                      <i class="fas fa-check text-success me-3"></i
-                      >Drag&amp;Drop builder
-                    </li>
-                  </ol>
-                </div>
-              </div>
-            </div>
+            </section>
           </div>
-        </section>
-        <!-- Section: Pricing -->
+          <div
+            class="tab-pane fade"
+            id="contact0"
+            role="tabpanel"
+            aria-labelledby="contact-tab0">
+            <section class="mb-5 mb-lg-10">
+              <h3 class="fw-bold mb-5">Contact</h3>
 
-        <!-- Section: Contact -->
-        <section class="mb-5 mb-lg-10">
-          <h3 class="fw-bold text-center mb-5">Contact us</h3>
+              <div class="row gx-xl-5">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                  <form>
+                    <!-- Name input -->
+                    <div class="form-outline mb-4" data-mdb-input-init>
+                      <input
+                        type="text"
+                        id="form4Example1"
+                        class="form-control" />
+                      <label class="form-label" for="form4Example1">Name</label>
+                    </div>
 
-          <div class="row gx-xl-5">
-            <div class="col-lg-5 mb-4 mb-lg-0">
-              <form>
-                <!-- Name input -->
-                <div class="form-outline mb-4" data-mdb-input-init>
-                  <input type="text" id="form4Example1" class="form-control" />
-                  <label class="form-label" for="form4Example1">Name</label>
+                    <!-- Email input -->
+                    <div class="form-outline mb-4" data-mdb-input-init>
+                      <input
+                        type="email"
+                        id="form4Example2"
+                        class="form-control" />
+                      <label class="form-label" for="form4Example2"
+                        >Email address</label
+                      >
+                    </div>
+
+                    <!-- Message input -->
+                    <div class="form-outline mb-4" data-mdb-input-init>
+                      <textarea
+                        class="form-control"
+                        id="form4Example3"
+                        rows="4"></textarea>
+                      <label class="form-label" for="form4Example3"
+                        >Message</label
+                      >
+                    </div>
+
+                    <!-- Checkbox -->
+                    <div class="form-check d-flex justify-content-center mb-4">
+                      <input
+                        class="form-check-input me-2"
+                        type="checkbox"
+                        value=""
+                        id="form4Example4"
+                        checked />
+                      <label class="form-check-label" for="form4Example4">
+                        Send me a copy of this message
+                      </label>
+                    </div>
+
+                    <!-- Submit button -->
+                    <button
+                      type="submit"
+                      class="btn btn-primary btn-block mb-4"
+                      data-mdb-ripple-init>
+                      Send
+                    </button>
+                  </form>
                 </div>
 
-                <!-- Email input -->
-                <div class="form-outline mb-4" data-mdb-input-init>
-                  <input type="email" id="form4Example2" class="form-control" />
-                  <label class="form-label" for="form4Example2"
-                    >Email address</label
-                  >
-                </div>
-
-                <!-- Message input -->
-                <div class="form-outline mb-4" data-mdb-input-init>
-                  <textarea
-                    class="form-control"
-                    id="form4Example3"
-                    rows="4"></textarea>
-                  <label class="form-label" for="form4Example3">Message</label>
-                </div>
-
-                <!-- Checkbox -->
-                <div class="form-check d-flex justify-content-center mb-4">
-                  <input
-                    class="form-check-input me-2"
-                    type="checkbox"
-                    value=""
-                    id="form4Example4"
-                    checked />
-                  <label class="form-check-label" for="form4Example4">
-                    Send me a copy of this message
-                  </label>
-                </div>
-
-                <!-- Submit button -->
-                <button
-                  type="submit"
-                  class="btn btn-primary btn-block mb-4"
-                  data-mdb-ripple-init>
-                  Send
-                </button>
-              </form>
-            </div>
-
-            <div class="col-lg-7 mb-4 mb-lg-0">
-              <div class="row gx-lg-5">
-                <div class="col-md-6 mb-4 mb-md-5">
-                  <div class="d-flex align-items-start">
-                    <div class="p-3 badge-primary rounded-4">
-                      <i class="fas fa-headset fa-lg fa-fw"></i>
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                  <div class="row gx-lg-5">
+                    <div class="col-md-6 mb-4 mb-md-5">
+                      <div class="d-flex align-items-start">
+                        <div class="p-3 badge-primary rounded-4">
+                          <i class="fas fa-headset fa-lg fa-fw"></i>
+                        </div>
+                        <div class="ms-4">
+                          <p class="fw-bold mb-1">Technical support</p>
+                          <p class="text-muted mb-0">support@example.com</p>
+                          <p class="text-muted mb-0">+1 234-567-89</p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="ms-4">
-                      <p class="fw-bold mb-1">Technical support</p>
-                      <p class="text-muted mb-0">support@example.com</p>
-                      <p class="text-muted mb-0">+1 234-567-89</p>
-                    </div>
-                  </div>
-                </div>
 
-                <div class="col-md-6 mb-4 mb-md-5">
-                  <div class="d-flex align-items-start">
-                    <div class="p-3 badge-primary rounded-4">
-                      <i class="fas fa-dollar-sign fa-lg fa-fw"></i>
+                    <div class="col-md-6 mb-4 mb-md-5">
+                      <div class="d-flex align-items-start">
+                        <div class="p-3 badge-primary rounded-4">
+                          <i class="fas fa-dollar-sign fa-lg fa-fw"></i>
+                        </div>
+                        <div class="ms-4">
+                          <p class="fw-bold mb-1">Sales questions</p>
+                          <p class="text-muted mb-0">sales@example.com</p>
+                          <p class="text-muted mb-0">+1 234-567-88</p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="ms-4">
-                      <p class="fw-bold mb-1">Sales questions</p>
-                      <p class="text-muted mb-0">sales@example.com</p>
-                      <p class="text-muted mb-0">+1 234-567-88</p>
-                    </div>
-                  </div>
-                </div>
 
-                <div class="col-md-6 mb-4 mb-md-5">
-                  <div class="d-flex align-items-start">
-                    <div class="p-3 badge-primary rounded-4">
-                      <i class="fas fa-newspaper fa-lg fa-fw"></i>
+                    <div class="col-md-6 mb-4 mb-md-5">
+                      <div class="d-flex align-items-start">
+                        <div class="p-3 badge-primary rounded-4">
+                          <i class="fas fa-newspaper fa-lg fa-fw"></i>
+                        </div>
+                        <div class="ms-4">
+                          <p class="fw-bold mb-1">Press</p>
+                          <p class="text-muted mb-0">press@example.com</p>
+                          <p class="text-muted mb-0">+1 234-567-87</p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="ms-4">
-                      <p class="fw-bold mb-1">Press</p>
-                      <p class="text-muted mb-0">press@example.com</p>
-                      <p class="text-muted mb-0">+1 234-567-87</p>
-                    </div>
-                  </div>
-                </div>
 
-                <div class="col-md-6 mb-4 mb-md-5">
-                  <div class="d-flex align-items-start">
-                    <div class="p-3 badge-primary rounded-4">
-                      <i class="fas fa-bug fa-lg fa-fw"></i>
-                    </div>
-                    <div class="ms-4">
-                      <p class="fw-bold mb-1">Bug report</p>
-                      <p class="text-muted mb-0">bugs@example.com</p>
-                      <p class="text-muted mb-0">+1 234-567-86</p>
+                    <div class="col-md-6 mb-4 mb-md-5">
+                      <div class="d-flex align-items-start">
+                        <div class="p-3 badge-primary rounded-4">
+                          <i class="fas fa-bug fa-lg fa-fw"></i>
+                        </div>
+                        <div class="ms-4">
+                          <p class="fw-bold mb-1">Bug report</p>
+                          <p class="text-muted mb-0">bugs@example.com</p>
+                          <p class="text-muted mb-0">+1 234-567-86</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </section>
           </div>
-        </section>
-        <!-- Section: Contact -->
+        </div>
       </div>
     </main>
     <footer class="text-center text-white" style="background-color: #050505c8">

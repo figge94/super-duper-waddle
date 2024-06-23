@@ -4,6 +4,8 @@
   "homepage": "https://mdbootstrap.com/docs/standard/",
   "license": "SEE LICENSE IN <License.txt>",
   "dependencies": {
+    "@headlessui/react": "^2.1.0",
+    "bootstrap": "^5.3.3",
     "fastbootstrap": "^2.2.0"
   }
 }
