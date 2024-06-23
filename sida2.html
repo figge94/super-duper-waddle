@@ -124,14 +124,18 @@
     <!--Main layout-->
     <main>
       <div class="container">
-        <ul class="nav nav-tabs mb-3" id="myTab0" role="tablist">
+        <ul
+          class="nav nav-tabs column-gap-2 border-bottom"
+          id="tab-menu"
+          role="tablist">
           <li class="nav-item" role="presentation">
             <button
               data-mdb-tab-init
               data-mdb-ripple-init
-              class="nav-link text-bg-light border-bottom rounded-bottom-0 rounded-top-4 active"
+              data-ripple-color="aqua"
+              class="nav-link text-bg-light rounded-bottom-0 rounded-top-4 active"
               id="hometab"
-              data-mdb-target="#home0"
+              data-mdb-target="#home"
               type="button"
               role="tab"
               aria-controls="home"
@@ -143,8 +147,9 @@
             <button
               data-mdb-tab-init
               data-mdb-ripple-init
+              data-ripple-color="aqua"
               class="nav-link text-bg-light border-bottom rounded-bottom-0 rounded-top-4"
-              id="profile-tab0"
+              id="profiletab"
               data-mdb-target="#profile0"
               type="button"
               role="tab"
@@ -157,6 +162,7 @@
             <button
               data-mdb-tab-init
               data-mdb-ripple-init
+              data-ripple-color="aqua"
               class="nav-link text-bg-light border-bottom rounded-bottom-0 rounded-top-4"
               id="contact-tab0"
               data-mdb-target="#contact0"
@@ -168,50 +174,49 @@
             </button>
           </li>
         </ul>
-        <div class="tab-content" id="myTabContent0">
+        <div class="tab-content text-center" id="homeContent">
           <div
-            class="tab-pane fade show active"
-            id="home0"
+            class="tab-pane mb-2 fade show active"
+            id="home"
             role="tabpanel"
             aria-labelledby="hometab">
-            <div class="col-lg-5 mb-5 mb-lg-0">
-              <div class="col-lg-5">
-                <h3 class="fw-bold mb-4">Home</h3>
-                <p class="mb-2"><strong>What will you learn:</strong></p>
+            <div
+              class="border border-top-0 rounded-top-0 rounded-bottom-4 mb-4 px-5">
+              <h3 class="fw-bold py-5">Home</h3>
+              <p class="mb-2"><strong>What will you learn:</strong></p>
 
-                <ul class="list-unstyled">
-                  <li>
-                    <i class="fas fa-long-arrow-alt-right me-2 text-info"></i
-                    >Bootstrap
-                  </li>
-                  <li>
-                    <i class="fas fa-long-arrow-alt-right me-2 text-info"></i
-                    >MDBootstrap
-                  </li>
-                  <li>
-                    <i class="fas fa-long-arrow-alt-right me-2 text-info"></i>UI
-                    & UX design
-                  </li>
-                  <li>
-                    <i class="fas fa-long-arrow-alt-right me-2 text-info"></i
-                    >Responsive web design
-                  </li>
-                </ul>
-                <button
-                  class="btn btn-dark btn-rounded mb-4"
-                  href="#"
-                  role="button"
-                  data-mdb-ripple-color="primary">
-                  Learn more
-                </button>
-              </div>
+              <ul class="list-unstyled">
+                <li>
+                  <i class="fas fa-long-arrow-alt-right me-2 text-info"></i
+                  >Bootstrap
+                </li>
+                <li>
+                  <i class="fas fa-long-arrow-alt-right me-2 text-info"></i
+                  >MDBootstrap
+                </li>
+                <li>
+                  <i class="fas fa-long-arrow-alt-right me-2 text-info"></i>UI &
+                  UX design
+                </li>
+                <li>
+                  <i class="fas fa-long-arrow-alt-right me-2 text-info"></i
+                  >Responsive web design
+                </li>
+              </ul>
+              <button
+                class="btn btn-dark rounded-bottom-0 rounded-top-4"
+                href="#"
+                role="button"
+                data-mdb-ripple-color="primary">
+                Learn more
+              </button>
             </div>
           </div>
           <div
             class="tab-pane fade"
             id="profile0"
             role="tabpanel"
-            aria-labelledby="profile-tab0">
+            aria-labelledby="profiletab">
             <section class="mb-5 mb-lg-10">
               <h3 class="fw-bold text-center mb-5">Profile</h3>
 
@@ -239,112 +244,102 @@
             id="contact0"
             role="tabpanel"
             aria-labelledby="contact-tab0">
-            <section class="mb-5 mb-lg-10">
-              <h3 class="fw-bold text-center mb-5">Contact us</h3>
-              <div class="row gx-xl-5">
-                <div class="col-lg-5 mb-4 mb-lg-0">
-                  <form>
-                    <div class="form-outline mb-4" data-mdb-input-init>
-                      <input
-                        type="text"
-                        id="form4Example1"
-                        class="form-control" />
-                      <label class="form-label" for="form4Example1">Name</label>
-                    </div>
-                    <div class="form-outline mb-4" data-mdb-input-init>
-                      <input
-                        type="email"
-                        id="form4Example2"
-                        class="form-control" />
-                      <label class="form-label" for="form4Example2"
-                        >Email address</label
-                      >
-                    </div>
-                    <div class="form-outline mb-4" data-mdb-input-init>
-                      <textarea
-                        class="form-control"
-                        id="form4Example3"
-                        rows="4"></textarea>
-                      <label class="form-label" for="form4Example3"
-                        >Message</label
-                      >
-                    </div>
-                    <div class="form-check d-flex justify-content-center mb-4">
-                      <input
-                        class="form-check-input me-2"
-                        type="checkbox"
-                        value=""
-                        id="form4Example4"
-                        checked />
-                      <label class="form-check-label" for="form4Example4">
-                        Send me a copy of this message
-                      </label>
-                    </div>
-                    <button
-                      type="submit"
-                      class="btn btn-primary btn-block mb-4"
-                      data-mdb-ripple-init>
-                      Send
-                    </button>
-                  </form>
-                </div>
+            <h3 class="fw-bold text-center mb-5">Contact us</h3>
+            <div class="row gx-xl-5">
+              <div class="col-lg-5 mb-4 mb-lg-0">
+                <form>
+                  <div class="form-outline mb-4" data-mdb-input-init>
+                    <input type="text" id="formName" class="form-control" />
+                    <label class="form-label" for="formName">Name</label>
+                  </div>
+                  <div class="form-outline mb-4" data-mdb-input-init>
+                    <input type="email" id="formMail" class="form-control" />
+                    <label class="form-label" for="formMail"
+                      >Email address</label
+                    >
+                  </div>
+                  <div class="form-outline mb-4" data-mdb-input-init>
+                    <textarea
+                      class="form-control"
+                      id="formText"
+                      rows="5"></textarea>
+                    <label class="form-label" for="formText">Message</label>
+                  </div>
+                  <div class="form-check d-flex justify-content-center mb-4">
+                    <input
+                      class="form-check-input me-2"
+                      type="checkbox"
+                      value=""
+                      id="formCheck"
+                      checked />
+                    <label class="form-check-label" for="formCheck">
+                      Send me a copy of this message
+                    </label>
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-block mb-4"
+                    data-mdb-ripple-init>
+                    Send
+                  </button>
+                </form>
+              </div>
 
-                <div class="col-lg-7 mb-4 mb-lg-0">
-                  <div class="row gx-lg-5">
-                    <div class="col-md-6 mb-4 mb-md-5">
-                      <div class="d-flex align-items-start">
-                        <div class="p-3 badge-primary rounded-4">
-                          <i class="fas fa-headset fa-lg fa-fw"></i>
-                        </div>
-                        <div class="ms-4">
-                          <p class="fw-bold mb-1">Technical support</p>
-                          <p class="text-muted mb-0">support@example.com</p>
-                          <p class="text-muted mb-0">+1 234-567-89</p>
-                        </div>
+              <div class="col-lg-7 mb-4 mb-lg-0">
+                <div class="row gx-lg-5">
+                  <div class="col-md-6 mb-4 mb-md-5">
+                    <div class="d-flex align-items-start">
+                      <div class="p-3 badge-primary rounded-4">
+                        <i class="fas fa-headset fa-lg fa-fw"></i>
+                      </div>
+                      <div class="ms-4">
+                        <p class="fw-bold mb-1">Technical support</p>
+                        <p class="text-muted mb-0">support@example.com</p>
+                        <p class="text-muted mb-0">+1 234-567-89</p>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="col-md-6 mb-4 mb-md-5">
-                      <div class="d-flex align-items-start">
-                        <div class="p-3 badge-primary rounded-4">
-                          <i class="fas fa-dollar-sign fa-lg fa-fw"></i>
-                        </div>
-                        <div class="ms-4">
-                          <p class="fw-bold mb-1">Sales questions</p>
-                          <p class="text-muted mb-0">sales@example.com</p>
-                        </div>
+                  <div class="col-md-6 mb-4 mb-md-5">
+                    <div class="d-flex align-items-start">
+                      <div class="p-3 badge-primary rounded-4">
+                        <i class="fas fa-dollar-sign fa-lg fa-fw"></i>
+                      </div>
+                      <div class="ms-4">
+                        <p class="fw-bold mb-1">Sales questions</p>
+                        <p class="text-muted mb-0">sales@example.com</p>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="col-md-6 mb-4 mb-md-5">
-                      <div class="d-flex align-items-start">
-                        <div class="p-3 badge-primary rounded-4">
-                          <i class="fas fa-newspaper fa-lg fa-fw"></i>
-                        </div>
-                        <div class="ms-4">
-                          <p class="fw-bold mb-1">Press</p>
-                          <p class="text-muted mb-0">press@example.com</p>
-                          <p class="text-muted mb-0">+1 234-567-87</p>
-                        </div>
+                  <div class="col-md-6 mb-4 mb-md-5">
+                    <div class="d-flex align-items-start">
+                      <div class="p-3 badge-primary rounded-4">
+                        <i class="fas fa-newspaper fa-lg fa-fw"></i>
+                      </div>
+                      <div class="ms-4">
+                        <p class="fw-bold mb-1">Press</p>
+                        <p class="text-muted mb-0">press@example.com</p>
+                        <p class="text-muted mb-0">+1 234-567-87</p>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="col-md-6 mb-4 mb-md-5">
-                      <div class="d-flex align-items-start">
-                        <div class="p-3 badge-primary rounded-4">
-                          <i class="fas fa-bug fa-lg fa-fw"></i>
-                        </div>
-                        <div class="ms-4">
-                          <p class="fw-bold mb-1">Bug report</p>
-                          <p class="text-muted mb-0">bugs@example.com</p>
-                          <p class="text-muted mb-0">+1 234-567-86</p>
-                        </div>
+                  <div class="col-md-6 mb-4 mb-md-5">
+                    <div class="d-flex align-items-start">
+                      <div class="p-3 badge-primary rounded-4">
+                        <i class="fas fa-bug fa-lg fa-fw"></i>
+                      </div>
+                      <div class="ms-4">
+                        <p class="fw-bold mb-1">Bug report</p>
+                        <p class="text-muted mb-0">bugs@example.com</p>
+                        <p class="text-muted mb-0">+1 234-567-86</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </section>
+            </div>
           </div>
         </div>
       </div>
@@ -376,22 +371,16 @@
               <i class="fab fa-github"></i>
             </a>
           </div>
-          <!-- Right -->
         </section>
-        <!-- Section: Social media -->
       </div>
 
       <hr class="hr hr-blurry" />
 
       <div class="container">
-        <!-- Section: Links  -->
         <section class="">
           <div class="container text-center text-md-start mt-5">
-            <!-- Grid row -->
             <div class="row mt-3">
-              <!-- Grid column -->
               <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <!-- Content -->
                 <h6 class="text-uppercase fw-bold mb-4">
                   <i class="fas fa-gem me-3"></i>Viccyz
                 </h6>
@@ -401,11 +390,8 @@
                   elit.
                 </p>
               </div>
-              <!-- Grid column -->
 
-              <!-- Grid column -->
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
                 <h6 class="text-uppercase fw-bold mb-4">Products</h6>
                 <p>
                   <a href="#!" class="text-reset">Sida 1</a>
