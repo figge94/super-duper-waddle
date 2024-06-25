@@ -78,10 +78,15 @@
         </div>
       </nav>
 
-      <nav
-        style="z-index: 1; min-height: 58.59px"
-        class="navbar navbar-expand-lg shadow-0">
-        <div class="container-fluid">
+      <div>
+        <a
+          class="btn btn-light btn-lg btn-rounded shadow-2-strong m-5"
+          data-mdb-ripple-init
+          href="index.html"
+          role="button">
+          <i class="fa-solid fa-chevron-left"></i>
+          Take me back
+        </a>
           <form class="d-flex" role="search">
             <input
               class="form-control"
@@ -93,35 +98,13 @@
             </button>
           </form>
         </div>
-      </nav>
-
-      <div
-        class="bg-image vh-100"
-        style="margin-top: -58.59px; background-image: url('img/bild.jpg')">
-        <div class="mask" style="background-color: hsla(0, 0%, 10%, 0.5)">
-          <div
-            class="container d-flex justify-content-center align-items-center h-100">
-            <div class="text-white text-center">
-              <a
-                class="btn btn-light btn-rounded btn-lg m-2 shadow-4-strong"
-                data-mdb-ripple-init
-                data-mdb-ripple-radius="50"
-                data-ripple-color="purple"
-                href="index.html"
-                role="button">
-                <i class="fa-solid fa-chevron-left"></i>
-                Take me home
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      
     </header>
 
     <main>
       <div class="container">
         <ul
-          class="nav nav-tabs column-gap-2 border-bottom"
+          class="nav nav-tabs column-gap-2"
           id="tab-menu"
           role="tablist">
           <li class="nav-item" role="presentation">
@@ -129,7 +112,7 @@
               data-mdb-tab-init
               data-mdb-ripple-init
               data-ripple-color="aqua"
-              class="nav-link text-bg-light rounded-bottom-0 rounded-top-4 active"
+              class="nav-link bg-info-subtle rounded-bottom-0 rounded-top-4"
               id="hometab"
               data-mdb-target="#home"
               type="button"
@@ -144,13 +127,13 @@
               data-mdb-tab-init
               data-mdb-ripple-init
               data-ripple-color="aqua"
-              class="nav-link text-bg-light border-bottom rounded-bottom-0 rounded-top-4"
+              class="nav-link bg-info-subtle rounded-bottom-0 rounded-top-4"
               id="profiletab"
               data-mdb-target="#profile0"
               type="button"
               role="tab"
               aria-controls="profile"
-              aria-selected="true">
+              aria-selected="false">
               Profile
             </button>
           </li>
@@ -159,7 +142,7 @@
               data-mdb-tab-init
               data-mdb-ripple-init
               data-ripple-color="aqua"
-              class="nav-link text-bg-light border-bottom rounded-bottom-0 rounded-top-4"
+              class="nav-link bg-info-subtle rounded-bottom-0 rounded-top-4"
               id="contact-tab0"
               data-mdb-target="#contact0"
               type="button"
@@ -170,14 +153,14 @@
             </button>
           </li>
         </ul>
-        <div class="tab-content text-center" id="homeContent">
+        <div class="card tab-content rounded-top-0 text-center mb-7" id="homeContent">
           <div
-            class="tab-pane mb-2 fade show active"
+            class="tab-pane rounded-0 fade show active"
             id="home"
             role="tabpanel"
             aria-labelledby="hometab">
             <div
-              class="border border-top-0 rounded-top-0 rounded-bottom-4 mb-4 px-5">
+              class="border-top-0 rounded-top-0 rounded-bottom-4 px-5 hover-overlay">
               <h3 class="fw-bold py-5">Home</h3>
               <p class="mb-2"><strong>What will you learn:</strong></p>
 
@@ -200,11 +183,12 @@
                 </li>
               </ul>
               <button
-                class="btn btn-dark rounded-bottom-0 rounded-top-4"
+                class="btn btn-dark btn-lg rounded-bottom-0 rounded-top-4"
                 href="#"
                 role="button"
-                data-mdb-ripple-color="primary">
-                Learn more
+                data-mdb-ripple-init
+                data-mdb-ripple-color="light">
+                Läs mer
               </button>
             </div>
           </div>
@@ -250,9 +234,9 @@
                   </div>
                   <div class="form-outline mb-4" data-mdb-input-init>
                     <input type="email" id="formMail" class="form-control" />
-                    <label class="form-label" for="formMail"
-                      >Email address</label
-                    >
+                    <label class="form-label" for="formMail">
+                      Email 
+                    </label>
                   </div>
                   <div class="form-outline mb-4" data-mdb-input-init>
                     <textarea
@@ -339,13 +323,10 @@
         </div>
       </div>
     </main>
-    <footer class="text-center text-white" style="background-color: #050505c8">
+    <footer class="text-center text-secondary" style="background-color: #050505c8">
       <div class="container">
         <section
-          class="d-flex justify-content-center justify-content-lg-between p-4 pb-1">
-          <div class="me-5 d-none d-lg-block">
-            <span>Get connected with us on social networks:</span>
-          </div>
+          class="d-flex justify-content-center p-4 pb-1">
           <div>
             <a href="" class="me-4 text-reset">
               <i class="fab fa-facebook-f"></i>
@@ -354,15 +335,9 @@
               <i class="fab fa-twitter"></i>
             </a>
             <a href="" class="me-4 text-reset">
-              <i class="fab fa-google"></i>
+              <i class="bi bi-instagram"></i>
             </a>
-            <a href="" class="me-4 text-reset">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
+            <a href="" class="text-reset">
               <i class="fab fa-github"></i>
             </a>
           </div>
