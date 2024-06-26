@@ -107,7 +107,7 @@
 
     <main>
       <div class="container">
-        <ul class="nav nav-tabs column-gap-2" id="tab-menu" role="tablist">
+        <ul class="nav nav-tabs column-gap-2" role="tablist">
           <li class="nav-item" role="presentation">
             <button
               data-mdb-tab-init
@@ -154,9 +154,7 @@
             </button>
           </li>
         </ul>
-        <div
-          class="card tab-content rounded-top-0 text-center mb-7"
-          id="homeContent">
+        <div class="card tab-content rounded-top-0 text-center mb-7">
           <div
             class="tab-pane rounded-0 fade show active"
             id="home"
@@ -228,22 +226,31 @@
             aria-labelledby="contact-tab0">
             <h3 class="fw-bold text-center my-5">Contact us</h3>
             <div class="row gx-xl-5">
-              <div class="col-lg-5 mb-4 mb-lg-0">
+              <div class="col-lg-4 m-4 mb-lg-0">
                 <form>
-                  <div class="form-outline mb-4" data-mdb-input-init>
-                    <input type="text" id="formName" class="form-control" />
-                    <label class="form-label" for="formName">Name</label>
-                  </div>
-                  <div class="form-outline mb-4" data-mdb-input-init>
-                    <input type="email" id="formMail" class="form-control" />
-                    <label class="form-label" for="formMail"> Email </label>
-                  </div>
-                  <div class="form-outline mb-4" data-mdb-input-init>
-                    <textarea
+                  <div class="form-floating mb-3">
+                    <input
+                      type="Name"
                       class="form-control"
-                      id="formText"
-                      rows="5"></textarea>
-                    <label class="form-label" for="formText">Message</label>
+                      id="floatingName"
+                      placeholder="Password" />
+                    <label for="floatingName">Namn</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="floatingInput"
+                      placeholder="name@example.com" />
+                    <label for="floatingInput">Email</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea
+                      class="form-control mb-3"
+                      placeholder="Leave a comment here"
+                      id="floatingTextarea2"
+                      style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Meddelande</label>
                   </div>
                   <div class="form-check d-flex justify-content-center mb-4">
                     <input
