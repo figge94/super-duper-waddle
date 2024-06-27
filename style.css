@@ -1,0 +1,19 @@
+#sidebtn button {
+  position: absolute;
+  left: -70px;
+  transition: 0.3s;
+  width: 200px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#sidebtn button:hover {
+  left: 0;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  display: flex;
+}

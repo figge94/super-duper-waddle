@@ -26,72 +26,64 @@
         box-sizing: border-box;
       }
 
-      body {
-        padding: 2rem;
-        font-family: Georgia, "Times New Roman", Times, serif;
-      }
-
-      /* Center website */
-      .main {
-        max-width: 1000px;
-        margin: auto;
-      }
-
       .row {
         margin: 10px -16px;
       }
 
-      /* Add padding BETWEEN each column */
       .row,
       .row > .column {
         padding: 8px;
       }
 
-      /* Create three equal columns that floats next to each other */
       .column {
         float: left;
         width: 33.33%;
-        display: none; /* Hide all elements by default */
+        display: none;
       }
 
-      /* Clear floats after rows */
       .row:after {
         content: "";
         display: table;
         clear: both;
       }
 
-      /* The "show" class is added to the filtered elements */
       .show {
         display: block;
       }
     </style>
   </head>
-  <body class="bg-info-subtle">
+  <body class="bg-info-subtle m-4">
     <a class="btn btn-dark btn-floating btn-lg" href="index.html" role="button">
       <i class="fa-solid fa-bars"></i>
     </a>
-    <!-- MAIN (Center website) -->
-    <main class="animate__animated animate__fadeInRight">
+
+    <main class="animate__animated animate__fadeInTop mx-auto">
       <h1 class="text-center">PORTFOLIO</h1>
       <hr class="hr hr-blurry" />
 
-      <div id="myBtnContainer navbar">
-        <button class="btn btn-info active" onclick="filterSelection('all')">
+      <div id="myBtnContainer d-flex justify-content-center">
+        <button
+          class="btn btn-info shadow-lg-hover active"
+          onclick="filterSelection('all')">
           Show all
         </button>
-        <button class="btn btn-info" onclick="filterSelection('nature')">
+        <button
+          class="btn btn-info shadow-lg-hover"
+          onclick="filterSelection('nature')">
           Nature
         </button>
-        <button class="btn btn-info" onclick="filterSelection('food')">
+        <button
+          class="btn btn-info shadow-lg-hover"
+          onclick="filterSelection('food')">
           Food
         </button>
-        <button class="btn btn-info" onclick="filterSelection('nellie')">
+        <button
+          class="btn btn-info shadow-lg-hover"
+          onclick="filterSelection('nellie')">
           Nellie
         </button>
       </div>
 
-      <!-- Portfolio Gallery Grid -->
       <div class="row text-center">
         <div class="column nature">
           <div class="card">
@@ -108,7 +100,7 @@
         </div>
         <div class="column nature">
           <div class="card">
-            <img src="/img/bild2.jpg" alt="" class="card-img w-100" />
+            <img src="/img/skog.jpg" alt="skog" class="card-img w-100" />
           </div>
         </div>
         <div class="column nature">
@@ -119,14 +111,19 @@
 
         <div class="column food">
           <div class="card">
-            <img src="img/gottigt.jpg" alt="Car" class="card-img w-100" />
+            <img src="img/gottigt.jpg" alt="godis" class="card-img w-100" />
           </div>
         </div>
+
         <div class="column food">
           <div class="card">
-            <img src="/img/dessert.JPG" alt="Car" class="card-img-top w-100" />
+            <img
+              src="/img/dessert.JPG"
+              alt="dessert"
+              class="card-img-top w-100" />
           </div>
         </div>
+
         <div class="column food">
           <div class="card">
             <img src="/img/drink.JPG" alt="drink" class="card-img-top w-100" />
@@ -135,7 +132,10 @@
 
         <div class="column nellie">
           <div class="card">
-            <img src="/img/nellie.jpg" alt="Car" class="card-img-top w-100" />
+            <img
+              src="/img/nellie.jpg"
+              alt="nellie"
+              class="card-img-top w-100" />
           </div>
         </div>
         <div class="column nellie">
