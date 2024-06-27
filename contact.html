@@ -76,31 +76,116 @@
     </header>
 
     <main>
-      <div class="container-fluid w-100 position-relative">
-        <a
-          class="btn btn-outline-info btn-lg btn-rounded shadow-3-strong m-2 top-0 start-0"
-          data-mdb-ripple-init
-          href="index.html"
-          role="button">
-          <i class="fa-solid fa-chevron-left"></i>
-        </a>
+      <div class="container">
+        
+            <h3 class="fw-bold text-center my-3">Contact us</h3>
+            <hr class="hr hr-blurry mb-5">
+            <div class="row gx-xl-5">
+              <div class="col-lg-4 m-4 mb-lg-0">
+                <form>
+                  <div class="form-floating mb-3">
+                    <input
+                      type="Name"
+                      class="form-control"
+                      id="floatingName"
+                      placeholder="Password" />
+                    <label for="floatingName">Namn</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="floatingInput"
+                      placeholder="name@example.com" />
+                    <label for="floatingInput">Email</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea
+                      class="form-control mb-3"
+                      placeholder="Leave a comment here"
+                      id="floatingTextarea2"
+                      style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Meddelande</label>
+                  </div>
+                  <div class="form-check d-flex justify-content-center mb-4">
+                    <input
+                      class="form-check-input me-2"
+                      type="checkbox"
+                      id="formCheck"
+                      checked />
+                    <label class="form-check-label" for="formCheck">
+                      Jag accepterar
+                    </label>
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-block mb-4 bg-gradient"
+                    data-mdb-ripple-init>
+                    Skicka
+                  </button>
+                </form>
+              </div>
 
-        <form
-          class="d-flex w-25 position-absolute bottom-0 end-0"
-          role="search">
-          <input
-            class="form-control"
-            type="search"
-            placeholder="Sök"
-            aria-label="Search" />
-          <button class="btn btn-outline-info" type="submit">
-            <i class="bi bi-search"></i>
-          </button>
-        </form>
+              <div class="col-lg-7 mb-4 mb-lg-0">
+                <div class="row gx-lg-5">
+                  <div class="col-md-6 mb-4 mb-md-5 pill">
+                    <div class="d-flex align-items-start">
+                      <div class="p-4 badge-danger rounded-circle bg-gradient bg-opacity-75 bg-danger border border-5 border-danger-subtle shadow-3-strong">
+                        <i class="fas fa-headset fa-lg fa-fw"></i>
+                      </div>
+                      <div class="ms-4">
+                        <p class="fw-bold mb-1">Technical support</p>
+                        <p class="text-muted mb-0">support@example.com</p>
+                        <p class="text-muted mb-0">+1 234-567-89</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 mb-4 mb-md-5">
+                    <div class="d-flex align-items-start">
+                      <div class="p-4 badge-danger rounded-circle bg-gradient bg-opacity-75 bg-danger border border-5 border-danger-subtle shadow-3-strong">
+                        <i class="fas fa-dollar-sign fa-lg fa-fw"></i>
+                      </div>
+                      <div class="ms-4">
+                        <p class="fw-bold mb-1">Sales questions</p>
+                        <p class="text-muted mb-0">sales@example.com</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 mb-4 mb-md-5">
+                    <div class="d-flex align-items-start ">
+                      <div class="p-4 badge-danger rounded-circle bg-gradient bg-opacity-75 bg-danger border border-5 border-danger-subtle shadow-3-strong">
+                        <i class="fas fa-newspaper fa-lg fa-fw"></i>
+                      </div>
+                      <div class="ms-4">
+                        <p class="fw-bold mb-1">Press</p>
+                        <p class="text-muted mb-0">press@example.com</p>
+                        <p class="text-muted mb-0">+1 234-567-87</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 mb-4 mb-md-5">
+                    <div class="d-flex align-items-start">
+                      <div class="p-4 badge-danger rounded-circle bg-gradient bg-opacity-75 bg-danger border border-5 border-danger-subtle shadow-3-strong">
+                        <i class="fas fa-bug fa-lg fa-fw"></i>
+                      </div>
+                      <div class="ms-4">
+                        <p class="fw-bold mb-1">Bug report</p>
+                        <p class="text-muted mb-0">bugs@example.com</p>
+                        <p class="text-muted mb-0">+1 234-567-86</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
       </div>
     </main>
-    <footer class="bg-dark">
-      <div class="container-fluid bg-gradient">
+    <footer class="text-secondary" style="background-color: #050505c8">
+      <div class="container">
         <section class="d-flex justify-content-center p-4 pb-1">
           <div>
             <a href="" class="me-4 text-reset">
@@ -121,7 +206,7 @@
 
       <hr
         class="hr hr-blurry"
-        style="height: 2px; background-color: rgb(232, 108, 137)" />
+        style="height: 4px; background-color: rgb(232, 108, 137)" />
 
       <div class="container">
         <section class="">
@@ -141,32 +226,16 @@
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h6 class="text-uppercase fw-bold mb-4">Products</h6>
                 <p>
-                  <a
-                    href="#!"
-                    class="text-decoration-underline link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover link-secondary"
-                    >Sida 1</a
-                  >
+                  <a href="#!" class="nav-link link-underline">Sida 1</a>
                 </p>
                 <p>
-                  <a
-                    href="#!"
-                    class="text-decoration-underline link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover link-secondary"
-                    >Sida 2</a
-                  >
+                  <a href="#!" class="link-light">Sida 2</a>
                 </p>
                 <p>
-                  <a
-                    href="#!"
-                    class="text-decoration-underline link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover link-secondary"
-                    >Sida 3</a
-                  >
+                  <a href="#!" class="text-reset">Sida 3</a>
                 </p>
                 <p>
-                  <a
-                    href="#!"
-                    class="text-decoration-underline link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover link-secondary"
-                    >Sida 4</a
-                  >
+                  <a href="#!" class="text-reset">Sida 4</a>
                 </p>
               </div>
 

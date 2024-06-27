@@ -20,6 +20,37 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/mdb.min.css" />
+    <style>
+    #mySidenav a {
+    position: absolute; 
+    left: -30px; 
+    transition: 0.3s; 
+    padding: 10px; 
+    width: 180px; 
+    text-decoration: none; 
+    font-size: 18px; 
+    }
+
+    #mySidenav a:hover {
+    left: 0; 
+    }
+
+    #about {
+    top: 100px;
+    }
+
+    #blog {
+    top: 170px;
+    }
+
+    #projects {
+    top: 240px;
+    }
+
+    #contact {
+    top: 310px;
+    }
+    </style>
   </head>
   <body>
     <header class="mb-7 mb-lg-7">
@@ -43,18 +74,18 @@
             </a>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link text-uppercase fw-light" href="sida2.html">Om</a>
+                <a class="nav-link text-uppercase fw-light" href="sida2.html">Hem</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-uppercase fw-light" href="sida3.html">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-uppercase fw-light" href="#">Kontakt</a>
+                <a class="nav-link text-uppercase fw-light" href="contact.html">Kontakt</a>
               </li>
             </ul>
           </div>
           <div class="d-flex align-items-center me-3">
-            <span class="avatar avatar-lg">
+            <span class="avatar avatar-lg bg-danger bg-gradient shadow-5-strong">
               <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-danger animate-ping rounded-circle">
                 <span class="visually-hidden">alert!</span>
               </span>
@@ -63,24 +94,18 @@
           </div>
         </div>
       </nav>
-      
     </header>
 
     <main>
-      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Top offcanvas</button>
-<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Left offcanvas</button>
-<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Right offcanvas</button>
-<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Bottom offcanvas</button>
-<!-- offcanvas -->
-<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-  <div class="offcanvas-header">
-    <h4 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h4>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit.
-  </div>
-</div>
+      <div id="mySidenav" class="sidenav vh-100">
+        <a href="#" class="btn btn-info border-start-0 rounded-0 rounded-end-5 shadow-0" id="about">About</a>
+        <a href="#" class="btn btn-outline-info border-start-0 rounded-0 rounded-end-5 shadow-0" id="blog">Blog</a>
+        <a href="#" class="btn btn-outline-info border-start-0 rounded-0 rounded-end-5 shadow-0" id="projects">Projects</a>
+        <a href="#" class="btn btn-dark border-start-0 rounded-0 rounded-end-5 shadow-0" id="contact">Contact</a>
+      </div>
+<button class="btn btn-dark border-start-0 rounded-0 rounded-end-5 shadow-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Meny</button>
+
+
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
   <div class="offcanvas-header">
     <h4 class="offcanvas-title" id="offcanvasLeftLabel">Offcanvas bottom</h4>
@@ -90,24 +115,8 @@
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit.
   </div>
 </div>
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-  <div class="offcanvas-header">
-    <h4 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h4>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit.
-  </div>
-</div>
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-  <div class="offcanvas-header">
-    <h4 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h4>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body small">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit.
-  </div>
-</div>
+
+
     </main>
     
     <footer>
