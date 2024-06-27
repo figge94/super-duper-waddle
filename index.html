@@ -46,9 +46,11 @@
               <li class="nav-item">
                 <a class="nav-link text-uppercase" href="sida2.html">Hem</a>
               </li>
+              <hr class="vr vr-blurry">
               <li class="nav-item">
                 <a class="nav-link text-uppercase" href="portfolio.html">Portfolio</a>
               </li>
+              <hr class="vr vr-blurry">
               <li class="nav-item">
                 <a class="nav-link text-uppercase" href="contact.html">Kontakt</a>
               </li>
@@ -62,26 +64,24 @@
         </div>
       </nav>
     </header>
-
-    <main>
-      <div id="sidebtn" class="sidenav vh-100">
-        <button href="#" class="btn btn-lg text-bg-dark bg-gradient border-start-0 rounded-0 rounded-end-5 shadow-3-strong text-end shadow-lg-hover" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft" style="top: 100px;">About</button>
-        <button href="#" class="btn btn-lg text-bg-dark bg-gradient border-start-0 rounded-0 rounded-end-5 shadow-3-strong text-end shadow-lg-hover" style="top: 170px;">Blog</button>
-        <button href="#" class="btn btn-lg text-bg-dark bg-gradient border-start-0 rounded-0 rounded-end-5 shadow-3-strong text-end shadow-lg-hover" style="top: 240px;">Projects</button>
-        <button href="#" class="btn btn-lg text-bg-dark bg-gradient border-start-0 rounded-0 rounded-end-5 shadow-3-strong text-end shadow-lg-hover" style="top: 310px;">Contact</button>
-      </div>
-
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
-        <div class="offcanvas-header">
-          <h4 class="offcanvas-title" id="offcanvasLeftLabel">Menu</h4>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body small">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit.
-        </div>
-      </div>
+<div class="layout">
+    <main class="layout-main m-5">
+      <h4 class="fw-bold">This is main section</h4>
+    <p class="me-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum nisl nunc, sed viverra diam volutpat
+      non. In eu enim arcu. Nunc suscipit ornare ex, nec venenatis nisi gravida nec. Proin fermentum semper ligula, a
+      condimentum libero interdum sed. Donec quis ante neque. Morbi dignissim est sit amet blandit vestibulum. Etiam
+      ornare tortor a risus auctor blandit. Sed elementum quis ante eu feugiat. Donec id massa diam. Curabitur lacus
+      metus, venenatis id varius a, porta vel erat. Fusce varius velit non porta vulputate. Mauris et ante eu orci
+      mattis ullamcorper a eu velit. Maecenas quis neque in odio consequat mollis.</p>
     </main>
-    
+     <aside class="layout-sidebar" style="width:240px">
+     <div id="sidebtn" class="layout-sidebar">
+        <button href="#" class="btn btn-lg text-bg-dark bg-gradient border-start-0 rounded-0 rounded-end-5 shadow-3-strong text-end shadow-lg-hover" >Om mig</button>
+        <button href="#" class="btn btn-lg text-bg-dark bg-gradient border-start-0 rounded-0 rounded-end-5 shadow-3-strong text-end shadow-lg-hover" style="top: 50px;">Portfolio</button>
+        <button href="#" class="btn btn-lg text-bg-dark bg-gradient border-start-0 rounded-0 rounded-end-5 shadow-3-strong text-end shadow-lg-hover" style="top: 100px;">Contact</button>
+      </div>
+    </aside>
+  </div>
     <footer class="bg-dark">
       <div
       class="bg-image"
@@ -258,7 +258,7 @@
             </div>
           </div>
         </div>
-        <p class="small mt-5 m">© 2024 Victoria Fingal</p>
+        <p class="small mt-5">© 2024 Victoria Fingal</p>
       </div>
     </footer>
   
