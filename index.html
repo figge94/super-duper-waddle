@@ -25,7 +25,6 @@
   <body>
     <header class="mb-7 mb-lg-7">
       <nav
-        style="z-index: 1; min-height: 58.59px"
         class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <button
@@ -42,19 +41,6 @@
             <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
               <i class="far fa-gem text-secondary"></i>
             </a>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link text-uppercase" href="sida2.html">Hem</a>
-              </li>
-              <hr class="vr vr-blurry">
-              <li class="nav-item">
-                <a class="nav-link text-uppercase" href="portfolio.html">Portfolio</a>
-              </li>
-              <hr class="vr vr-blurry">
-              <li class="nav-item">
-                <a class="nav-link text-uppercase" href="contact.html">Kontakt</a>
-              </li>
-            </ul>
           </div>
           <div class="d-flex align-items-center me-3">
             <span class="avatar avatar-lg bg-danger bg-gradient shadow-5-strong">
@@ -66,19 +52,20 @@
     </header>
 <div class="layout">
     <main class="layout-main m-5">
+      <div class="container-fluid container card p-5 my-5">
       <h4 class="fw-bold">This is main section</h4>
-    <p class="me-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum nisl nunc, sed viverra diam volutpat
+    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum nisl nunc, sed viverra diam volutpat
       non. In eu enim arcu. Nunc suscipit ornare ex, nec venenatis nisi gravida nec. Proin fermentum semper ligula, a
       condimentum libero interdum sed. Donec quis ante neque. Morbi dignissim est sit amet blandit vestibulum. Etiam
       ornare tortor a risus auctor blandit. Sed elementum quis ante eu feugiat. Donec id massa diam. Curabitur lacus
       metus, venenatis id varius a, porta vel erat. Fusce varius velit non porta vulputate. Mauris et ante eu orci
-      mattis ullamcorper a eu velit. Maecenas quis neque in odio consequat mollis.</p>
+      mattis ullamcorper a eu velit. Maecenas quis neque in odio consequat mollis.</p></div>
     </main>
      <aside class="layout-sidebar" style="width:240px">
      <div id="sidebtn" class="layout-sidebar">
-        <button href="#" class="btn btn-lg text-bg-dark bg-gradient border-start-0 rounded-0 rounded-end-5 shadow-3-strong text-end shadow-lg-hover" >Om mig</button>
-        <button href="#" class="btn btn-lg text-bg-dark bg-gradient border-start-0 rounded-0 rounded-end-5 shadow-3-strong text-end shadow-lg-hover" style="top: 50px;">Portfolio</button>
-        <button href="#" class="btn btn-lg text-bg-dark bg-gradient border-start-0 rounded-0 rounded-end-5 shadow-3-strong text-end shadow-lg-hover" style="top: 100px;">Contact</button>
+        <a href="sida2.html" type="button" role="button" class="btn btn-lg text-bg-dark bg-gradient border-start-0 rounded-0 rounded-end-5 text-end shadow-lg-hover">HEM</a>
+        <a href="portfolio.html" type="button" role="button" class="btn btn-lg text-bg-dark bg-gradient border-start-0 rounded-0 rounded-end-5 shadow-3-strong text-end shadow-lg-hover" style="top: 60px;">Portfolio</a>
+        <a href="contact.html" type="button" role="button" class="btn btn-lg text-bg-dark bg-gradient border-start-0 rounded-0 rounded-end-5 shadow-3-strong text-end shadow-lg-hover" style="top: 120px;">Contact</a>
       </div>
     </aside>
   </div>
