@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap-site",
+  "name": "super-super-waddle",
   "version": "7.3.0",
   "homepage": "https://mdbootstrap.com/docs/standard/",
   "license": "SEE LICENSE IN <License.txt>",
@@ -8,6 +8,7 @@
     "animate.css": "^4.1.1",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
-    "fastbootstrap": "^2.2.0"
+    "fastbootstrap": "^2.2.0",
+    "mdb-ui-kit": "^9.3.0"
   }
 }
